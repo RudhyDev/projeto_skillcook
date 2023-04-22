@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+  db_dev:
+    env_file: .env.development 
+    image: postgres:15.2
+    container_name: db_dev_postgres
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: ${DB_DEV_PASSWORD}
+      POSTGRES_USER: ${DB_DEV_USER}
+      POSTGRES_DB: ${DB_DEV_DATABASE_NAME}
+    ports:
+      - "5433:5432"
+volumes:
+  db-data:
