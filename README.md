@@ -17,7 +17,7 @@
         `yarn run prepare-scripts`
 
 4. Configure o ambiente de desenvolvimento:
-        ### renomeie o arquivo .env.example para .env.development e preencha com as suas variáveis de ambiente e então execute:
+        - renomeie o arquivo .env.example para .env.development e preencha com as suas variáveis de ambiente e então execute:
         `yarn run prisma:set:dev`
 
 5. Inicie o banco de dados de desenvolvimento:
