@@ -39,3 +39,5 @@
 ### Para iniciar o servidor em modo de produção, execute:
         `yarn run start:prod`
         
+## 🛠 Subir Container somente da applicacao:
+        `docker-compose -f docker-compose-dev.yml -p aplicacao up -d app

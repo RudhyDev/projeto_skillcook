@@ -1,5 +1,11 @@
 version: "3.9"
 services:
+  app:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/home/node/app
   db_dev:
     env_file: .env.development 
     image: postgres:15.2
